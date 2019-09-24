@@ -1,0 +1,40 @@
+#To create a table ->
+CREATE TABLE <table-name> (<first-column-name> <data-type for coll>
+                           <second-column-name> <data-type for coll>);
+
+#To select from table ->
+SELECT * FROM <table-name>
+
+#To delete a table
+DROP TABLE <table-name>
+
+#To insert something into a table
+INSERT INTO <table-name> (first column, second column, etc)
+                         VALUES (<first column>, <second column>, etc),
+                                (<first column>, <second column>, etc);
+
+#To select something from a table
+SELECT * FROM <table-name> WHERE <clause>
+-> SELECT * FROM people WHERE last_name = 'Simpson'
+                          AND first_name = 'Homer'
+
+-> SELECT * FROM people WHERE age > 50
+                        ORDER BY age ACS/DESC (ascending or descending order)
+
+#To change data type of the column
+ALTER TABLE <table-name>
+ALTER COLUMN <column-name> TYPE <new-data-type>
+
+#To update values in some columns
+UPDATE <table-name> SET <column-name> <new-value>
+- This will update the whole column and give it <new-value>
+
+DELETE FROM <table-name>
+- deletes everything from the table
+DELETE * FROM <table-name> WHERE <clause>
+- deletes chosen by WHERE
+
+UPDATE <table-name> SET <column-name> WHERE <clause>
+
+
+
